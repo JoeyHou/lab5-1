@@ -3,6 +3,11 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+	$('.friend_link').click(function(){
+		// preventDefault();
+		var temp = $(this).find('h3').text();
+		$(this).find('h3').text(anagrammedName(temp));
+	});
 })
 
 /*
